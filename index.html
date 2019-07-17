@@ -6,12 +6,13 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-	<link rel="icon" href="V.png">
+	<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="./img/V.png">
 
 	<title>Verstaan</title>
 
 </head>
-<body onscroll="navbarListen()" onload="navbarListen()">
+<body onscroll="navbarListen()" onload="load()" style="opacity: 0">
 
 	<!-- **** NAVBAR **** -->
 	<a href="" style="position: absolute; left: 25px; top: 25px;">
@@ -19,30 +20,24 @@
 	</a>
 
 	<div id="top" >
-		<a class="anchor" id="home"></a>
+		<a class="anchor"></a>
 	</div>
 
 
-	<ul id="navbar" style="z-index: 10; color: white; position: absolute; width: 100%; text-align: right; padding: 40px;">
+	<ul id="navbar" style="list-style-type: none; z-index: 10; color: white; position: absolute; width: 100%; text-align: right; padding: 40px;">
 		<a href="" id="navbar-icon" style="position: absolute; left: -1000px; color: white;">
 			<img src="./img/V-white.png" width="32" style="margin-right: 8px;">
 			Verstaan
 		</a>
 
 		<li class="nav-item">
-			<a class="nav-link" id="contact-scroll">Contact</a>
+			<a class="nav-link" id="nav-contact">Contact</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link">About</a>
+			<a class="nav-link" id="nav-about">About</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link">Industries</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link">Atlas</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="">Home</a>
+			<a class="nav-link" id="nav-home">Home</a>
 		</li>
 	</ul>
 	
@@ -51,210 +46,116 @@
 
 
 	<!-- **** BANNER **** -->
-	<div class="row banner justify-content-center">
-
-		<div class="col-6" style="color: white; text-align: left; padding: 300px 0 100px 100px;">
-			<h1 style="">Introducing Atlas</h1>
-			<h4 style="font-weight: 200;">A threat forecasting and response platform</h4>
-		</div>
-
-		<div class="col-6" style="padding-top: 150px; overflow: hidden;">
-			<img src="./img/laptop-phone-medium.png" width="600px">
-		</div>
-
-	</div>
-
-
-
-
-
-	<!--- **** INTRO **** -->
-	<div class="container-fluid" style="padding: 80px 40px;">
-		<div class="row">
-			<div class="col-4" style="text-align: right; padding-right: 40px;">
-				<img src="./img/phone-incident.png" width="200px">
-			</div>
-			<div class="col-8">
-				<div style="text-align: center;">
-					<img src="./img/atlas-logo.png" width="300px">
-					<h2 style="padding-top: 20px;">
-						Intelligence in the palm of your hand
-					</h2>
-				</div>
-
-				<div class="row" style="margin-top: 70px;">
-					<div class="col-4" style="text-align: center;">
-						<img src="./img/icon-intel-sharing.png" width="80px">
-						<h2 style="padding: 20px 0;">
-							Intel Sharing
-						</h2>
-
-						<h3>
-							"Waze for private security"
-						</h3>
-
-					</div>
-					<div class="col-4" style="text-align: center; padding: 0 50px;">
-						<img src="./img/icon-forecasting.png" width="80px">
-						<h2 style="padding: 20px 0;">
-							Forecasting
-						</h2>
-
-						<h3>
-							Proactive assessment
-						</h3>
-
-					</div>
-					<div class="col-4" style="text-align: center;">
-						<img src="./img/icon-cnc.png" width="80px">
-						<h2 style="padding: 20px 0;">
-							Command & Control
-						</h2>
-						
-						<h3>
-							Increased communication
-						</h3>
-
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div style="text-align: center; margin-top: 60px;">
-			<button class="btn btn-lg btn-outline-dark">How it works</button>
-		</div>
+	<div class="row banner justify-content-center" id="home">
+		<!-- <img src="./img/mountains-logo.png" height="100%"> -->
 		
+
 	</div>
 
 
-	<!-- **** INSPIRATION **** -->
-	<div class="row parallax2 justify-content-center">
-		<div class="parallax2-content col">
-			<div style="font-size: 24px; margin-bottom: 20px;">
-				What our users say...
-			</div>
 
-			<div class="row" style="margin-top: 40px;">
-				<div class="col-2">
-					<img src="./img/icon-person.png" width="100px">
-				</div>
-				<div class="col-10">
-					<h2>
-						Will
-					</h2>
-					<div style="color: #ccc;">
-						Private security team leader in Africa
-					</div>
-					<div style="font-style: italic; font-size: 14px;">
-						"The platform is great for planning routes and highlighting indications of future high threat situations. Putting it all on one platform makes a world of difference."
-					</div>
-				</div>
-			</div>
 
-			<div class="row" style="margin-top: 40px;">
-				<div class="col-2">
-					<img src="./img/icon-person.png" width="100px">
-				</div>
-				<div class="col-10">
-					<h2>
-						Nicholas
-					</h2>
-					<div style="color: #ccc;">
-						Private security firm director in Somalia
-					</div>
-					<div style="font-style: italic; font-size: 14px;">
-						"We do tons of PSD (Personal Security Detail) tasks every year. This as a huge asset when conducting surveillance and counter-surveillance during mission planning."
-					</div>
-				</div>
-			</div>
 
-			<div class="row" style="margin-top: 40px;">
-				<div class="col-2">
-					<img src="./img/icon-person.png" width="100px">
-				</div>
-				<div class="col-10">
-					<h2>
-						Jim
-					</h2>
-					<div style="color: #ccc;">
-						Private security contractor in Iraq
-					</div>
-					<div style="font-style: italic; font-size: 14px;">
-						"The program is awesome. Again, great stuff and keep up the work – tools like this are invaluable in our line of work."
-					</div>
-				</div>
-			</div>
-			
+	<!--- **** ABOUT **** -->
+	<a name="about" id="about" style="top: 570px; position: absolute;"></a>
+	<div class="about container-fluid" style="padding: 20px 100px 20px 100px; background-color: #2b3854; text-align: center">
+
+		<div class="row" style="margin-bottom: 40px;">
+			<h2 style="width: 100%;"> The Atlas Platform </h2>
 		</div>
+
+
+		<div class="row" style="margin-bottom: 200px;">
+			<div class="col-md-8" style="text-align: right; padding-right: 8%">
+				<img src="./img/mockup-hybrid.png" width="85%">
+			</div>
+
+			<div class="col-md-4" style="text-align: left; margin-top: 60px;">
+				<img src="./img/atlas-logo.png" width="80px">
+				<p style="margin-top: 16px;">
+					Atlas integrates direct user input and up-to-date intel to create the optimal platform for security teams across a global network.
+				</p>
+			</div>
+		</div>
+
+
+		<div style="margin-bottom: 40px; text-align: left;">
+			<h2>A Global Security Network</h2>
+			<p>
+				Atlas optimizes threat management for global security teams by streamlining workflow between administrators and employees, integrating open- and professionally-sourced threat data into a single centralized platform, and using data science to provide proactive routing and threat intelligence.
+			</p>
+		</div>
+
+		<div class="row" style="margin-bottom: 200px;">
+			<div class="col-sm-4" style="padding: 8px 4%;">
+				<img src="./img/mockup-phone-menu.png" width="100%">
+			</div>
+
+			<div class="col-sm-4" style="padding: 8px 4%;">
+				<img src="./img/mockup-phone-routing.png" width="100%">
+			</div>
+
+			<div class="col-sm-4" style="padding: 8px 4%;">
+				<img src="./img/mockup-phone-alert.png" width="100%">
+			</div>
+
+		</div>
+	
+
+		<div class="row" style="text-align: right;">
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-10">
+				<h2 style="width: 100%">Our Mission</h2>
+				<p style="width: 100%">
+					We believe that humanity has the right to protect oneself.<br/>
+					To navigate freely with safety in mind.<br/>
+					<br/>
+					Our community is built on the foundation of those who share these values.<br/>
+					An inter-woven 22nd-century global network powered by the collective knowledge of unfolding dangerous threats; so everyone has a chance to go home.
+				</p>
+			</div>
+		</div>
+
 	</div>
-
-
-
+	
 
 
 	<!-- **** CONTACT **** -->
-	<div class="container-fluid">
-		<a class="anchor" id="contact"></a>
-		<div class="row" style="padding: 80px 60px;">
-			<div class="col-2"></div>
-			<div class="col-8">
-				<h2 style="margin-bottom: 15px;">
-					Contact us to schedule a demo.
-				</h2>
-				<form class="needs-validation" id="contact-form" novalidate>
-					<div class="form-row">
-						<div class="col-6">
-							<input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
-							<div class="invalid-feedback">
-								Please provide a name.
-							</div>
-						</div>
-						<div class="col-6">
-							<input type="text" class="form-control" placeholder="Last name">
-						</div>
-					</div>
-					<div class="form-row">
-						<div class="col">
-							<input type="text" class="form-control" id="validationCustom02" placeholder="Company" required>
-							<div class="invalid-feedback">
-								Please provide a company name.
-							</div>
-						</div>
-					</div>
-					<div class="form-row">
-						<div class="col">
-							<input type="email" class="form-control" id="validationCustom03" placeholder="Email" required>
-							<div class="invalid-feedback">
-								Please provide a valid email.
-							</div>
-						</div>
-					</div>
-					<div class="form-row">
-						<div class="col">
-							<textarea class="form-control"></textarea>
-						</div>
-					</div>
-					
-					
-					<button class="btn btn-primary" style="width: 100%;" type="submit">Submit</button>
+	<div class="contact container-fluid" style="padding: 150px 100px 80px 100px; background-color: #7583ab; text-align: left;">
+		
+		<div class="row">
+				
+			<h2 style="width: 100%">Contact</h2>
+			<p>
+				info@verstaan.com<br>
+				+1 (888) 888-8888<br>
+				<br>
+				7 Davis Square<br>
+				Somerville, MA 02144<br>
+				<br>
 
-				</form>
-			</div>
-			<div class="col-2"></div>
+				<a href="mailto:info@verstaan.com">
+					<i class="fa fa-envelope fa-lg" aria-hidden="true" style="margin-right: 10px;"></i>
+				</a>
+				<a href="https://www.linkedin.com/company/verstaan/">
+					<i class="fa fa-linkedin-square fa-lg" aria-hidden="true" style="margin-right: 10px;"></i>
+				</a>
+				<a href="https://www.facebook.com/verstaansec/">
+					<i class="fa fa-facebook-square fa-lg" aria-hidden="true" style="margin-right: 10px;"></i>
+				</a>
+			</p>
+
 		</div>
-	</div>
 
+		<div id="contact" style="padding-top: 110px;">
+		</div>
 
-
-
-	<!-- **** FOOTER **** -->
-	<div class="row align-items-center footer">
-		<div class="col-4">
+		<!-- **** FOOTER **** -->
+		<div class="row align-items-center" style="color: #bbb; width: 100%;">
 			&copy; 2019 Verstaan
 		</div>
-		<div class="col-4" style="text-align: center;">
-			<a class="top-link" id="top-scroll">^ back to top</a>
-		</div>
+
 	</div>
 
 
@@ -265,9 +166,12 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Muli:200&display=swap" rel="stylesheet">
 
 	<script type="text/javascript">
+
+		// ***** SMOOTH SCROLLING ***** //
+		
 		function getElementY(query) {
 			return window.pageYOffset + document.querySelector(query).getBoundingClientRect().top
 		}
@@ -309,34 +213,46 @@
 			})
 		}
 
-		document.getElementById('top-scroll').addEventListener('click', smoothScroll.bind(null, '#home', 1000))
-		document.getElementById('contact-scroll').addEventListener('click', smoothScroll.bind(null, '#contact', 1000))
+		document.getElementById('nav-home').addEventListener('click', smoothScroll.bind(null, '#home', 1000))
+		document.getElementById('nav-about').addEventListener('click', smoothScroll.bind(null, '#about', 1000))
+		document.getElementById('nav-contact').addEventListener('click', smoothScroll.bind(null, '#contact', 1000))
 		
 
-	</script>
+		// ***** NAVBAR LISTENER ***** //
 
-	<script type="text/javascript">
-		function checkPositioning(el, threshold) {
+		function checkPositioningBackground(el, threshold) {
 			threshold = threshold || 0;
 
 			var rect = el.getBoundingClientRect();
 			var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
 			var above = rect.bottom + threshold < 0;
-			//var below = rect.top - viewHeight + threshold >= 0;
 
-			return above; // || !below;
+			return above;
+		}
+
+		function checkPositioningHighlight(el, threshold) {
+			threshold = threshold || 0;
+
+			var rect = el.getBoundingClientRect();
+			var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+			var above = rect.bottom - threshold < 0;
+			var below = rect.top - viewHeight + threshold >= 0;
+
+			return above || !below;
 		}
 
 		function navbarListen() {
-			var threshold = 40 - 14;
-			var highlight = '#ee3322';
+			// BACKGROUND
+			var thresholdBackground = 40 - 14;
+			var navbarBackgroundColor = '#5f658a';
 
-			if (checkPositioning(document.getElementById('top'), threshold)) {
+
+			if (checkPositioningBackground(document.getElementById('top'), thresholdBackground)) {
 				document.getElementById('navbar').style.position = 'fixed';
-				document.getElementById('navbar').style.backgroundColor = '#444';
+				document.getElementById('navbar').style.backgroundColor = navbarBackgroundColor;
 				document.getElementById('navbar').style.opacity = '0.95';
 				document.getElementById('navbar').style.padding = '14px 40px';
-				document.getElementById('navbar').style.boxShadow = '0 4px 8px 0 rgba(0, 0, 0, 0.2)';
+				document.getElementById('navbar').style.boxShadow = '0 4px 8px 0 rgba(95, 101, 138, 0.4)';
 
 				document.getElementById('navbar-icon').style.left = '25px';
 
@@ -349,9 +265,34 @@
 				document.getElementById('navbar').style.boxShadow = null;
 
 				document.getElementById('navbar-icon').style.left = '-1000px';
+			}
 
+			// HIGHLIGHT
+			var threshold = 500;
+			var highlight = '#f77f0f';
+
+
+			if (checkPositioningHighlight(document.getElementById('contact'))) {
+				document.getElementById('nav-home').style.color = '#fff';
+				document.getElementById('nav-about').style.color = '#fff';
+				document.getElementById('nav-contact').style.color = highlight;
+			} else if (checkPositioningHighlight(document.getElementById('about'), threshold)) {
+				document.getElementById('nav-home').style.color = '#fff';
+				document.getElementById('nav-about').style.color = highlight;
+				document.getElementById('nav-contact').style.color = '#fff';
+			} else if (checkPositioningHighlight(document.getElementById('home'), threshold)) {
+				document.getElementById('nav-home').style.color = highlight;
+				document.getElementById('nav-about').style.color = '#fff';
+				document.getElementById('nav-contact').style.color = '#fff';
 			}
 		}
+
+
+		function load() {
+			document.body.style.opacity = 1;
+			navbarListen();
+		}
+
 	</script>
 
 	<script type="text/javascript">
@@ -375,10 +316,20 @@
 
 	<style type="text/css">
 		* {
-			font-family: 'Montserrat', sans-serif;
+			font-family: 'Muli', sans-serif;
 			font-weight: 200;
 		}
+		body {
+			background-color: #2b3854;
+			color: #fff;
+			-webkit-transition: opacity 2s; /* Safari prior 6.1 */
+  		transition: opacity 2s;
+		}
+		a {
+			color: #fff;
+		}
 		a:hover {
+			color: #ccc;
 			text-decoration: none;
 		}
 		a.anchor {
@@ -387,12 +338,17 @@
 		    top: -75px;
 		    visibility: hidden;
 		}
-		ul {
-			list-style-type: none;
+		p {
+			color: #fff;
+		}
+		h1 {
+			font-size: 28px;
+
 		}
 		h2 {
-			color: #bc393e;
-			font-size: 24px;
+			color: #fff;
+			font-size: 36px;
+			
 		}
 		h3 {
 			color: #1c1c1c;
@@ -420,58 +376,29 @@
 		}
 
 		.banner {
-			background-image: url("img/mountains.png");
-		    height: 650px; 
-		    background-attachment: fixed;
-		    background-position: center;
-		    background-repeat: no-repeat;
-		    background-size: cover;
+			background-image: url("img/mountains-logo.png");
+			background-color: #2b3854;
+	    height: 650px; 
+	    /* background-attachment: fixed; */
+	    background-position: center top;
+	    background-repeat: no-repeat;
+	    background-size: cover;
 		}
 
-		.description {
-			color: #1c1c1c;
-			text-align: justify;
-		}
-		.img-phone {
-			padding: 20px 15px 40px 15px;
-
+		.about {
+			background-image: linear-gradient(#2b3854, #766a76, #d18774, #7583ab);
 		}
 
-		.parallax2 {
-			background-image: url("img/operator.png");
-		    /* height: 500px; */
-		    background-attachment: fixed;
-		    background-position: center;
-		    background-repeat: no-repeat;
-		    background-size: cover;
-
-		    text-align: center;
-		}
-		.parallax2-content {
-			color: white;
-			text-align: center;
-			padding: 150px 15%;
-			text-align: justify;
-
-			background-color: rgba(0, 0, 0, 0.3);
+		.contact {
+			background-image: url("img/rock-bottom.png");
+			background-color: #7583ab;
+	    height: 550px; 
+	    /* background-attachment: fixed; */
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
 		}
 
-		.form-row {
-			margin-bottom: 10px;
-		}
-
-		.footer {
-			background-color: #444; 
-			color: #bbb;
-			padding: 20px;
-		}
-		.mailto-link {
-			color: #ddd;
-		}
-		.mailto-link:hover {
-			color: #eee;
-			text-decoration: none;
-		}
 		.top-link {
 			color: #ddd;
 			cursor: pointer;
@@ -479,15 +406,6 @@
 		.top-link:hover {
 			color: #fff;
 			text-decoration: none;
-		}
-
-		.img-app {
-			width: 100%;
-		}
-		.img-web {
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			width: 100%;
-			margin-top: 20px;
 		}
 
 	</style>
